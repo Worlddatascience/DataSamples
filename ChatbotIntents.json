@@ -1,0 +1,747 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "Is anyone there?", "Hello", "What's up", "I am", "Hey"],
+         "responses": ["Hello!", "Good to see you!", "Hi there, how can I help?"]
+         
+        },
+        {"tag": "checking",
+         "patterns": ["how are you?","How have you been?"],
+         "responses": ["I am doing good, thanks!", "I feel good, thanks", "I am awesome!"]
+        
+        },
+        {"tag": "compliments",
+         "patterns": ["thanks", "thank you", "you are amazing", "you are the best", "wow"],
+         "responses": ["Thank you!"] 
+         
+        },
+        {"tag": "helping",
+         "patterns": ["I need some help", "can you help me?", "i'm curious", "i'm not sure about something"],
+         "responses": ["How can I help you?"] 
+         
+         },
+        {"tag": "character",
+         "patterns": ["Are you a girl?", "Are you a boy?"],
+         "responses": ["No comment!"] 
+         
+        },
+        {"tag": "goodbye",
+         "patterns": ["cya", "See you later", "Goodbye", "I am leaving", "Have a good day","ok bye"],
+         "responses": ["Sad to see you go.", "Talk to you later", "Goodbye!"]
+  
+        },
+        {"tag": "age",
+         "patterns": ["what is your age", "how old are you", "age?"],
+         "responses": ["Age is just a number : )", "I'm not too old", "I'm not too young"]
+
+        },
+        {"tag": "name",
+         "patterns": ["what is your name", "what should I call you", "whats your name?"],
+         "responses": ["You can call me Bela.", "I'm Bela!", "I'm Bela aka Finance Genius."]
+  
+        },
+        {"tag": "robot",
+         "patterns": ["Are you a robot?", "Are you a machine?"],
+         "responses": ["Yes and a smart one too!","I am a bot that chats : )"]
+         
+        },
+        {"tag": "joke",
+         "patterns": ["Tell me a joke", "I am sad", "I need inspiration", "tell me something funny"],
+         "responses": ["What do snowmen do when they are not feeling well? They take a chill pill!", 
+                       "What's a banana peels favourite type of shoe? A slippers."]
+        },
+        {"tag": "laugh",
+         "patterns": ["that's funny", "you are a joker", "you made my day", "awesome", "good", "great", "cool", "too funny"],
+         "responses": ["Thank you!"] 
+         
+        },
+        {"tag": "weather",
+         "patterns": ["what's the weather like?", "is it hot today", "cold", "how's the weather today?"],
+         "responses": ["I am not sure, you can check here. https://weather.com ", "Sorry, I'm not a weatherbot. You can check here, https://weather.com "]
+         
+        },
+        {"tag": "final",
+         "patterns": ["cya", "talk to you later", "take care", "see you next time"],
+         "responses": ["See you again"]
+    
+        },
+        {"tag":"market capitaliation",
+         "patterns":["what is market capitaliation","explain market capitaliation","tell me about market capitaliation","what's market capitaliation","can i know market capitaliation"], 
+         "response":["Market Capitalization refers to total dollar market value of company’s outstanding shares of stocks. It measures a company's worth on an open market as well as the market’s perception of its future prospects."]
+
+        },
+        {"tag":"parabolic sar",
+         "patterns":["what is parabolic sar","explain parabolic sar","tell me about parabolic sar","what's parabolic sar","can i know parabolic sar"], 
+         "responses":["Parabolic SAR stands for Parabolic Stop And Reverse. It is created by J.Welles Wilder. It is used to determine trend direction as well as to draw attention  when price is changing. When plotted on chart Parabolic SAR is a series of dots, around price bars. When the trend  is upwards the dot is placed below the price. When the trend is downwards the dot is placed above the price. The change in direction of dots produces trading signal. One should buy if price crosses above PSAR. One should sell if price crosses below PSAR."]
+        
+        },
+        {"tag":"moving average crossover",
+         "patterns":["what is moving average crossover","explain moving average crossover","tell me about moving average crossover","what's moving average crossover","can i know moving average crossover"], 
+         "responses":["Moving Average Crossover is the first technical indicator traders will utilize when they set out attempting to trade. When plotted, two moving average with different degrees of smoothing, the traces of these  moving average cross each other. Long term moving average are slow moving ,less sensitive to short -term price action. Short term moving average provide traders with actively indicating recent price actions but are prone to greater number of false signals. 50 day and 200 day SMA are conventionally used in determining crossovers. The occurrence of crossover produces trading signals. When fast or short(50 day) moving average crosses slow or long(200 day)moving average it indicates buy signal. It is also known as Golden cross as trend is upwards. When slow or long(200 day) moving average crosses fast or short(50 day)moving average it indicates sell signal. It is also referred as death/dead cross."]
+
+        },
+        {"tag":"macd histogram",
+         "patterns":["what is macd histogram","explain macd histogram","tell me about macd histogram","what's macd histogram","can i know macd histogram"], 
+         "responses":["MACD stands for Moving Average Convergence and Divergence. It is a trend following momentum indicator that show relationships between two moving averages of security price. There are usually two lines in MACD Histogram - MACD line and the signal line. MACD line is calculated by subtracting 26 day  EMA with 12 day  EMA. MACD Histogram displays the value of MACD line minus value of signal line. It is also an oscillator that fluctuates above and below the zero line. It is used to find signal line cross overs in MACD. When MACD line crosses above signal line it indicates buy signal and histogram is found above. When MACD line crosses below signal line it indicates sell signal and histogram is found below. False positive divergence occurs when price moves sideways."]   
+
+        },
+        {"tag":"directional movement indicator",
+         "patterns":["what is directional movement indicator","explain directional movement indicator","tell me about directional movement indicator","what's directional movement indicator","can i know directional movement indicator"],  
+         "responses":["Directional Movement Indicator also referred as DMI. It was developed by J.Welles. It is normally shown above or below the price charts. It is calculated by comparing current price with previous price range. DMI displays results as Upward Directional Index (+DMI)and Downward directional trend (-DMI). Both +DMI and -DMI helps in identifying the direction of price asset moving. If +DMI is above -DMI the price is moving upwards and is favourable to long trade. If -DMI is above +DMI the price is moving downwards and short trade is  favourable."]
+
+        },
+        {"tag":"average directional index",
+         "patterns":["what is average directional index","explain average directional index","tell me about average directional index","what's average directional index","can i know average directional index"],     
+         "responses":["It is also referred as ADX. It is a line which is a component  in DMI. While +DMI and -DMI determines the direction of price movement ,ADX focuses on  strength  of the uptrend and downtrend. The crossover between +DI and -DI produces trade signals. If +DMI is above -DMI and ADX is above 20,or ideally 25 ,it is a potential buy signali.e)long trade. If -DMI is above +DMI and ADX is above 20 or 25,it is an ideal  to enter  potential short trade. When ADX is below 20 ,the price is trendless and it is not ideal time to enter into trade."]
+
+        },
+        {"tag":"warrant",
+         "patterns":["what is warrant","explain warrant","tell me about warrant","what's warrant","can i know warrant"],      
+         "responses":["Warrants are a very easy investment for a company to offer. It is a traded investment that gives the holder the right with no obligation to buy or sell a specific asset at set price by a set date. Warrants give the investor an opportunity for high returns but at high risk. However,maximum an investor can lose is original investment. It is easy to purchase warrants and they are also traded in equity market. They are very liquid,allowing the buyer to easily sell it. Warrants tend to have much longer period between issue and expiration typically in years."]
+
+        },
+        {"tag":"call warrant",
+         "patterns":["what is  call warrant","explain call warrant","tell me about call warrant","what's call warrant","can i know call warrant"],      
+         "responses":["Call warrants are securities that gives the holder the right but not obligation to buy certain securities before certain time at certain price. The price at which the warrant holder can buy the underlying stock is called as exercise price or strike price. The strike price is fixed certain percentage above current trading price of underlying stock. The inclusion of call warrant feature may enable the company to lower its debt. If stock price is up ,call warrant price is up and when stock price falls call warrant price also falls."]
+
+        },
+        {"tag":"put warrant",
+         "patterns":["what is  put warrant","explain put warrant","tell me about put warrant","what's put warrant","can i know put warrant"],      
+         "responses":["Put  warrants are securities that gives the holder the right but not obligation to sell certain securities before certain time at certain price. If stock price is up put warrant price is down and when stock price falls put warrant price up. A put warrants ,exercise price is the price at which the holder can sell the warrant. American warrants can be exercised anytime on or before expiration dates. Investors can use put warrants to hedge against falling shares values of stock held in their portfolio. Expiration lasts upto 15 years."]
+
+        },
+        {"tag":"quick",
+         "patterns":["what is quick ratio","explain quick ratio","tell me about quick ratio","what's quick ratio","can i know quick ratio"],      
+         "responses":["Quick Ratio indicates a company’s capacity to pay its liabilities without needed to sell its inventory or get additional financing. It is a measure of dollar amount of liquid assets available against dollar amount of current liabilities of a company. Liquid assets are the assets that can be quickly converted into cash with minimal impact of price received in open market. Current liabilities are a company’s debts or obligations that are due to be paid to creditors  within one year. 1 is the normal Quick ratio which indicates that the company is equipped with exactly enough assets to be instantly liquidated to pay off its current liabilities. The ratio 1.5 indicates that the company has $1.5 liquid assets for each $1 liquid liabilities. Higher the ratio ,better a company’s liquidity and financial health. Lower the ratio ,the more likely company will struggle with paying debts. It is also known as Acid test ratio."]
+    
+        },
+        {"tag":"block trade",
+         "patterns":["what is block trade","explain block trade","tell me about block trade","what's block trade","can i know block trade"],      
+         "responses":["Block Trade is the sale or purchase of a very large number of financial assets, either shares of stock or bonds. Most trading involves the equity and debt markets. The New York Stock Exchange’s Rule 127.10, defines a block trade as one which involves at least 10,000 shares of stock or a market value of $200000, whichever is less. The trade almost always conducted by institutional  investors such as funds or corporations. A block trade can be made outside the open market through a private purchase agreement to avoid market instability. The trade usually conducted through an intermediary known as blockhouse (a type of brokerage firm)"]
+
+        },
+        {"tag":"relative strength index",
+         "patterns":["what is relative strength index","explain relative strength index","tell me about relative strength index","what's relative strength index","can i know relative strength index"],        
+         "responses":["RSI is a momentum indicator used in technical analysis that measures the magnitude of recent price changes to evaluate overbought or oversold conditions in the price of a stock or other asset. It is displayed as an oscillator (a line graph that moves between two extremes). The RSI reading is from 0 to 100, with a cut off value at 50. Trader usually look to sell when the market or RSI is overbought and look to buy when the RSI is oversold. However, since the market is volatile, there can be many overbought and oversold signals overtime. Another method to use to check is ”divergent” signal. These signals do not occur often and are reliable."]
+
+        },
+        {"tag":"money flow index",
+         "patterns":["what is money flow index","explain money flow index","tell me about money flow index","what's money  flow index","can i know money flow index"],        
+         "responses":["MFI is a technical oscillator that uses price and volume data for identifying overbought or oversold signals in an asset. MFI is also used to identify divergences, signaling changes in the price trend. The oscillator moves between 0 and 100. Unlike RSI, MFI incorporates both price and volume data, as opposed to just price. MFI can produce false signals. It’s advisable for traders to use other indicators for analysis."]
+
+        },
+        {"tag":"earnings per growth",
+         "patterns":["what is earnings per growth","explain earnings per growth","tell me about earnings per growth","what's earnings per growth","can i know earnings per growth"],           
+         "responses":["EPS growth shows the growth of earnings per share over time. EPS growth helps investors identify stocks that are increasing or decreasing in profitability. EPS Growth = (EPS this year) / (EPS last year) – 1"]
+
+        },
+        {"tag":"consumer price index",
+         "patterns":["what is consumer price index","explain consumer price index","tell me about consumer price index","what's consumer price index","can i know consumer price index"],            
+         "responses":["CPI is a measure that examines the weighted average of prices of a basket of consumer goods and services, such as transportation, food, and medical care. CPI is used to identify periods of inflation or deflation. CPI is based on the index average for the period from 1982 through 1984 (inclusive) which was set to 100. A CPI reading of 100 means that inflation is back to the level that it was in 1984. Readings of 150 indicates a rise in the inflation level of 150%."]
+
+        },
+        {"tag":"market edge",
+         "patterns":["what is market edge","explain market edge","tell me about market edge","what's market edge","can i know market edge"],            
+         "responses":["Market Edge is a company that provides finished technical research daily on over 3400 stocks and ETFs to help you make better trades. The company offers a second opinion report about stocks and ETFs."]
+
+        },
+        {"tag":"stochastic crossover",
+         "patterns":["what is stochastic crossover","explain stochastic crossover","tell me about stochastic crossover","what's stochastic cross over","can i know stochastic cross over ","what is stochastic overbought and oversold ","explain stochastic overbought and oversold ","tell me about stochastic overbought and oversold ","what's stochastic overbought and oversold ","can i know stochastic overbought and oversold ","what is stochastic %k and %d","explain stochastic %k and %d","tell me about stochastic %k and %d","what's stochastic %k and %d","can i know stochastic %k and %d "],               
+         "responses":["Stochastic is a Greek word. It means 'guess' or 'random'. The Stochastic Oscillator uses a scale to measure the degree of change between prices from one closing period to predict the continuation of the current direction trend. For an uptrend market,  prices will remain equal to, or above the previous period closing price. Overbought - When the %K line of the stochastic scale climbs to more than 80. Oversold - When the %K line falls below 20 on the stochastic scale. For a downtrend market, prices will likely remain equal to, or below the previous closing price. The Stochastic Oscillator consists of two lines. A crossover occurs when the fast stochastic (%K line) intersects the slow stochastic (%D line). Because the %K line reacts more quickly to market changes it oscillates at a faster rate than the %D line. Under certain conditions, it can catch up to, and cross over the %D line."]
+
+        },
+        {"tag":"variable annuity",
+         "patterns":["what is variable annuity","explain variable annuity","tell me about variable annuity","what's variable annuity","can i know variable annuity "],               
+         "responses":["An annuity is a financial product that pays out a fixed stream of payments to an individual, and these financial products are primarily used as an income stream for retirees. A variable annuity is a type of annuity contract, the value of which can vary based on the performance of an underlying portfolio of mutual funds. Variable annuities differ from fixed annuities, which provide a specific and guaranteed return. If you already have a healthy pension or another source of income sufficient to support your everyday needs in retirement, you may not need an annuity. If you don’t have a guaranteed stream of retirement income, you should consider buying an annuity. An annuity is a good source of lifetime income."]
+
+        },
+        {"tag":"stock buyback",
+         "patterns":["what is stock buyback","explain stock buyback","tell me about stock buyback","what's stock buyback","can i know stock buyback "],               
+         "responses":["A stock buyback occurs when a company buys back its shares from the marketplace. The effect of a buyback is to reduce the number of outstanding shares on the market, which increases the ownership stake of the stakeholders. A buyback will always increase the stock’s value and benefit the shareholders in the short term."]
+    
+        },
+        {"tag":"financial quota share",
+         "patterns":["what is financial quota share","explain financial quota share","tell me about financial quota share","what's financial quota share","can i know financial quota share"],               
+         "responses":["A financial quota share is a reinsurance treaty in which the ceding company is responsible for a portion of the loss associated with a claim. Financial quota shares do not require the ceding company to pay a deductible before coverage begins, as the company will always be responsible for a portion of the loss. Reinsurance occurs when multiple insurance companies share risk by purchasing insurance policies from other insurers to limit their own total loss in case of disaster. A ceding company is an insurance company that passes a portion or all of the risk associated with an insurance policy to another insurer."]
+
+
+        },
+        {"tag":"american depository receipt",
+         "patterns":["what is american depository receipt","explain american depository receipt","tell me about american depository receipt","what's american depository receipt","can i know american depository receipt"],               
+         "responses":["ADR is a  certificate issued by US bank that represent shares in foreign stocks. ADR  trade on American Stock Exchanges. Investors willing to invest in ADR can purchase them from brokers/dealers. The brokers obtain ADR by buying already issued ADR in US  financial markets or create new. Already issued ADR is found in NASDAQ or NYSE. Creating a new ADR involves buying stocks of foreign company in issuer home market and deposit acquired share in overseas depository bank. The bank then issue ADR  that are equal to share deposited which can be traded in US financial markets."]
+
+
+        },
+        {"tag":"volume range",
+         "patterns":["what is volume range","explain volume range","tell me about volume range","what's volume range","can i know volume range"],               
+         "responses":["Volume Range indicates how much a financial asset is traded in a time period. Similar to Price Change, Volume Change represents the change in volume of an asset. Volume Change is generally implied on stocks and futures. The Volume Change can be used to spot future market moves. Volume Rate of Change is used to track the speed of volume change in a market. The volume changes represent the investors sentiment on the strength or conviction of a company. If there is a price decline and increase in volume, the trend is going to be downwards. If there is a price increase and increase in volume, the reversal may happen."]
+        
+        },
+        {"tag":"price change",
+         "patterns":["what is price change","explain price change","tell me about price change","what's price change","can i know price change"],                  
+         "responses":["Price Change is the difference between a stock’s closing price on the trading day and it’s previous closing price. It can be calculated on a day-to-day basis or month-to-month or year-to-year. It is the amount of shift in the value of a stock to either a higher or lower level. ROC can be used to track the speed of trend of a price change. If ROC >0 but falling, it indicates that the speed of up trend is slowing down. If ROC > 0 and rising above and crosses previous high, it indicates that the trend continues and the price increases rapidly."]
+
+        },
+        {"tag":"gap up or gap down",
+         "patterns":["what is gap up or gap down  ","explain gap up or gap down","tell me about gap up or gap down","what's gap up or gap down","can i know gap up or gap down"],                  
+         "responses":["Gaps can be categorized as follows: Breakaway gap: Occurs at the end of the share’s price pattern, usually signaling the beginning of a new trend. High volume trading is observed here. Exhaustion gap: Occurs when there’s a final attempt of a price pattern to reach new highs or lows. Low volume trading is observed here. Common gap: Simple areas of price gaps in the market. Continuation gap: Occurs in the middle of a stock’s price pattern. There’s a difference between Exhaustion and Continuation gaps which should be considered while trading gaps. Fading - when a price gap is filled within a day is known as Fading. The stock price comes to it’s original price after experiencing a gap during the day. Once a stock price starts to fill a gap, it won’t stop i.e there will be little or no support or resistance in the market. Exhaustion gaps are more likely to be filled. When a company announcements tend to be positive, the market can experience a Gap Up. When there’s a sudden change in economy, the markets can experience a Gap Down."]
+
+        },
+        {"tag":"current price",
+         "patterns":["what is current price  ","explain current price ","tell me about current price ","what's current price ","can i know current price "],                   
+         "responses":["Current Price is the price of the last recorded print on that stock or market. It represents the current value of a stock or a share of a commodity, index, bond and any other securities. It isn’t constant and always changes with time due to supply and demand, Government regulations, Economy. Current Price can be used to measure GDP, inflation and variation of asset prices with time.It provides an overview of the market performance and the supply and demand in the market. If the current price falls below the previous price it doesn’t mean that the market price tend to go down. If the current price rises above the previous price it doesn’t mean the market price tends to rise up all the way."]
+
+        },
+        {"tag":"sector industry sub-industry",
+         "patterns":["what is sector industry sub-industry  ","explain sector industry sub-industry ","tell me about sector industry sub-industry","what's sector industry sub-industry","can i know sector industry sub-industry"],                   
+         "responses":["Sub-Industry relates to a more specific type of business in an industry. Sector is of 4 types: Primary Sector: Consists of industries which deal with Extraction and Harvesting of natural resources like Minerals and Agriculture. Secondary Sector: Consists of industries which deal with Construction, Manufacturing, Preprocessing, Production of finished goods from raw materials. Tertiary Sector: Consists of industries like Retailers, Entertainment and Financial companies. This sector focuses on providing services to consumers. Quaternary Sector: Consists of industries dealing with Intellectual and Knowledge activities, Research & Development, Business Consulting and Education. There are 24 industry groups like Automobile, Banks, Energy, Consumer Services, Insurance, Healthcare, Medical Equipment. Sector to Sector comparison isn’t much desirable when investing. Within a Sector there are several industry groups, when comparing sectors we can’t get a clear view on how the sector is changing or varying while investing."]
+
+        },
+        {"tag":"net unrealized appreciation",
+         "patterns":["what is net unrealized appreciation","explain net unrealized appreciation","tell me about  net unrealized appreciation","what's  net unrealized appreciation","can i know sector  net unrealized appreciation"],                   
+         "responses":["Net Unrealized Appreciation (NUA). Some companies offered stocks as symbol of appreciation. NUA is the difference in value between the average cost basis of shares of employer stock and the current market value of the shares.  NUA is important if you are distributing highly appreciated employer stock from your tax-deferred employer-sponsored retirement plan, such as a 401K. The IRS allows a more favorable capital gains tax rate on the NUA of employer stock upon distribution, after certain qualifying events. The disadvantage is that ordinary income tax must be paid on the cost basis of the employer stock immediately"]
+        
+        },
+        {"tag":"bollinger bands",
+         "patterns":["what is bollinger bands","explain bollinger bands","tell me about bollinger bands","what's bollinger bands","can i know about bollinger bands"],
+         "responses":["Bollinger Bands are a technical trading tools used to observe the market volatility. These bands are created by simply adding and subtracting one Standard Deviation from the moving average. When the prices are above the upper band, the market is assumed to be overbought. When the prices are below the lower band, the market is assumed to be oversold."]
+        
+        },
+        {"tag":" bollinger bands bandwidth",
+         "patterns":["what is bollinger bands bandwidth","explain bollinger bands bandwidth","tell me about bollinger bands bandwidth","what's bollinger bands","can i know about bollinger bands bandwidth"],
+         "responses":["A Bollinger Bands bandwidth is nothing but a Bollinger Band indicator. It is used to measure the volatility.It is generally present at the bottom of the chart. It indicates low Volatility when bandwidth contracts. It indicates high Volatility when bandwidth expands."]
+        
+        },
+        {"tag":"momentum cross",
+         "patterns":["what is momentum cross","explain momentum cross","tell me about momentum cross","what's momentum cross","can i know about momentum cross"],
+         "responses":["Momentum - Rate of the rise or fall in market price. Stocks with strong past performance can continue to outperform the  stocks with poor past performance. They are indicated by indicators like RSI, Stochastic Oscillator, Williams %R. When the price crosses above or below 100 Line Cross, it signals either buy or sell."]
+            
+        },
+        {"tag":"rate of change",
+         "patterns":["what is rate of change","explain rate of change","tell me about rate of change","what's rate of change","can i know about rate of change"],
+         "responses":["ROC simply shows the speed at which the prices are changing. It is a momentum indicator.Asset with high momentum has positive ROC. Asset with low momentum has negative ROC."]
+        
+        },
+        {"tag":"dividend yield",
+         "patterns":["what is dividend yield","explain dividend yield","tell me about dividend yield","what's dividend yield","can i know about dividend yield"],
+         "responses":["Dividend Yield is the yearly amount in a percentage the investor gets paid as a Dividend. This % is the amount of money we look to make in a year. Each share you earn pays 4% back to you per year. Lower yielding dividend stocks are often offered by more stable companies with a long record of consistent growth and steady payments."]
+        
+        },
+        {"tag":"dividend frequency",
+         "patterns":["what is dividend frequency","explain dividend frequency","tell me about dividend frequency","what's dividend frequency","can i know about dividend frequency"],
+         "responses":["Dividend Frequency is the yearly amount in a percentage the investor gets paid as a Dividend. We typically look for Stocks that pay Monthly. This means we get a Dividend every month we own the stock."]
+        
+        },
+        {"tag":"buy sell",
+         "patterns":["what is buy sell ratio","explain buy sell ratio","tell me about buy sell ratio","what's buy sell ratio","can i know about buy sell ratio"],
+         "responses":["The insider stock buy-sell ratio takes the volume of orders/ shares sold by insiders and divides it by the volume of orders/ shares bought by insiders. If the ratio is less than 1, then insiders are purchasing more shares than selling, which is a positive sign for the investor-analyst. If the ratio is more than 1, then insiders are selling more shares than purchasing."]
+            
+        },
+        {"tag":"on balance ",
+         "patterns":["what is on balance volume","explain on balance volume","tell me about on balance volume","what's on balance volume","can i know about on balance volume"],
+         "responses":["On balance volume is a technical indicator of trading momentum, using volume flow to predict stock price changes, showing crowd sentiment to predict a bullish/ bearish outcome. While the actual numeric value of OBV is arbitrary, this indicator becomes meaningful when observing the nature of OBV movements over time (the slope of the OBV line) and comparing relative action between price bars and OBV"]
+        
+        },
+        {"tag":"today  vs average ",
+         "patterns":["differentiate today volume and average volume","explain today volume and average volume","tell me about today volume and average volume","what's today volume and average volume","can i know about today volume and average volume","differences between today volume and average volume"],
+         "responses":["Daily volume tells how many stock shares are traded on a given day. Average daily volume is the average of the daily volumes across several days (usually 20 or 30 days). Many traders/ investors prefer high volume over low volume, because it is easier to buy/ sell at a desired price. An average dollar volume of at least 20 million provides good liquidity—adequate for most traders."]
+        
+        },
+        {"tag":"new 52-week high/low",
+        "patterns":["what is new 52-week high/low","explain new 52-week high/low","tell me about new 52-week high/low","what's new 52-week high/low","can i know about new 52-week high/low"],
+        "responses":["The 52-week high/ low is a technical indicator showing the highest/ lowest daily closing price at which a security has traded during a one-year time period. New high/ low distinguishes when the closing price of a stock exceeds its 52-week high/ low, suggesting an entry/ exit point for a stock while indicating price momentum upward (buy indicator) or downward (sell indicator)."]  
+        
+        },
+        {"tag":"risk adjusted assets",
+        "patterns":["what is risk adjusted assets","explain risk adjusted assets","tell me about risk adjusted assets","what's risk adjusted assets","can i know about risk adjusted assets"],
+        "responses":["Risk-adjusted assets are utilized to find the minimum amount of capital that must be kept by financial institutions to prevent the chance of going bankrupt.Credit ratings of certain types of bank assets are utilized to determine the risk coefficients. Loans funded with collateral are considered to be less-risky"]
+            
+        },
+        {"tag":"equity pull option",
+         "patterns":["what is equity pull option","explain equity pull option","tell me about equity pull option","what's equity pull option","can i know about equity pull option"],
+         "responses":["An equity pull option is a financial instrument that gives an investor the right (not an obligation) to sell shares at a specified future date at a specified price. The investor expects the price of the underlying asset (stock, ETFs, etc) to go down so that he/she can sell the security at a price higher than the market value, thus making a profit."]
+            
+        },
+        {"tag":"adverse development cover",
+         "patterns":["what is adverse development cover","explain adverse development cover","tell me about adverse development cover","what's adverse development cover","can i know about adverse development cover"],
+         "responses":["Adverse Development Cover (ADC) seeks to protect the insurer when losses exceed an agreed amount. Adverse Development Cover often covers an entire business book. The ADC protects an insurer from great deterioration of run-off business."]
+        
+        },
+        {"tag":"loss portfolio transfer",
+         "patterns":["what is loss portfolio transfer","explain loss portfolio transfer","tell me about loss portfolio transfer","what's loss portfolio transfer","can i know about loss portfolio transfer"],
+         "responses":["Loss portfolio transfer (LPT) refers to a reinsurance contract between an insurer and reinsurer in which an insurer hand over certain policies and loss reserves to a reinsurer. Loss portfolio transfer allows insurers to strengthen their balance sheets and to transfer risk. Insurers often utilize loss portfolio transfers to monetize any remaining loss reserves."]
+        
+        },
+        {"tag":"dollar cost averaging",
+         "patterns":["what is dollar cost averaging ","explain dollar cost averaging","tell me about dollar cost averaging","what's dollar cost averaging","can i know about dollar cost averaging"],
+         "responses":["Dollar-cost averaging is a strategy that spreads an investment over time to lessen the effect of market volatility. It is mostly utilized by investors who seek to protect their investments against different market volatilities. An investment amount is broken down into smaller equal portions that are then invested using the same timeframe (daily, weekly, etc)"]
+        
+        },
+        {"tag":"hedging",
+         "patterns":["what is hedging ","explain hedging","tell me about hedging","what's hedging","can i know about hedging"],
+         "responses":["Hedging is a risk management strategy to reduce the portfolio's exposure to different market risks. Hedging strategy is utilized to offset potential losses in investments. Risks are lessened by taking an opposite position in a similar security. Hedging allows investors to still make a profit in volatile markets"]
+        
+        },
+        {"tag":"redeemable shares",
+         "patterns":["what is redeemable shares ","explain redeemable shares","tell me about redeemable shares","what's redeemable shares","can i know about redeemable shares"],
+         "responses":["Redeemable shares refer to shares that can be purchased back by the issuing company. The redemption date is often fixed.It can also be decided at the issuing company's discretion. The redemption price is often similar to the issue price"]
+        
+        },
+        {"tag":"b share",
+           "patterns":["what is b share","explain b share","tell me about b shares","what's b share","can i know about b share"],
+            "responses":["B Shares are one of the mutual fund shares with a back-end load structure. They differ from A Shares and C Shares by their load structure. When an investor sells the share, a commission is deducted.B Shares allows investors to invest a full initial amount. Therefore, an investor does not receive the full amount.An expense ratio of less than 1% is considered to be reasonable."]
+        
+        },
+        {"tag":"unit investment",
+         "patterns":["what is unit investment","explain unit investment","tell me about unit investment","what's b share","can i know about unit investment"],
+         "responses":["Unit Trust Investments are made of pooled investors' funds that are managed by fund managers. There are two main Unit. Trust Investment income sources: 1. interest from investments 2. dividends from  shares. Unit investment trusts have low investment risk. They spread investors' funds across different investments to reduce the chance of making a loss."]
+        
+        },
+        {"tag":"beta score",
+         "patterns":["what is beta score","explain beta score","tell me about beta score","what's beta score","can i know about beta score"],
+         "responses":["Beta score is the measure of volatality. The Higher the Beta Score the more Volatile the Stock is. Typically look for a Volatility score under 70%"]
+        
+        },
+        {"tag":"price to cashflow ",
+         "patterns":["what is price to cashflow ratio","explain price to cashflow ratio","tell me about price to cashflow ratio","what's price to cashflow ratio","can i know about price to cashflow ratio"],
+         "responses":["Price to Cashflow Ratio compares the company Share price to the company value. We generally like to see a Price/Cashflow Ratio under 10."]
+            
+        },
+        {"tag":"price to sales ",
+         "patterns":["what is price to sales ratio","explain price to sales  ratio","tell me about price to sales  ratio", "what's price to sales  ratio","can i know about price to sales ratio"],
+         "responses":["Price to sales ratio is the price relative to sales. A low number means that the price is fair compared to the sales per share. We look for a P/S Ratio of 4 or Less "]
+        
+        },
+        {"tag":"debt to capital",
+         "patterns":["what is  debt to capital","explain debt to capital","tell me about debt to capital","what's debt to capital","can i know about debt to capital"],
+         "responses":["The debt to capital is one of the strongest data points to tell us about the financial health of a company. The higher the ratio the riskier we see the investment. We generally like to see a Total Debt/Total Capital under 17%. The closer to 0% the better of course (the lower the debt compared to the capital) "]
+        
+        },
+        {"tag":"price to book ",
+         "patterns":["what is price to book ratio","explain price to book ratio","tell me about price to book ratio","what's price to book ratio","can i know about price to book ratio"],
+         "responses":["Price to Book Ratio (Compares the company Share price to the company value). The Book Value is relative to the value of the Assets worth to the market. We generally like to see a Price/Book Ratio between 0 and 3.This means we are getting a good value ."]
+        
+        },
+        {"tag":"price to earnings ",
+         "patterns":["what is price to earnings ratio","explain price to earnings ratio","tell me about price to earnings ratio","what's price to earnings ratio","can i know about price to earnings ratio"],
+         "responses":["Price to Earnings Ratio tells us the percent the stock is actually worth compared to its price. A high P/E Ratio means that the stock price is high to its actual earnings. One of the most important Data metrics when evaluating a stock.We look for P/E Ratio of 0 - 30. The Closest to 0 the better for the investor. The higher P/E Ratio the better it is for early investors and Company Owners."]
+        
+        },
+        {"tag":"price to earnings growth ",
+         "patterns":["what is price to earnings growth ratio","explain price to earnings growth ratio","tell me about price to earnings growth  ratio","what's price to earnings growth ratio","can i know about price to earnings ratio"],
+         "responses":["PEG ratio is a valuation metric. PEG ratios tells whether a stock is undervalued or overvalued. If PEG ratio of a stock is less than 1, then it is considered as undervalued. If PEG ratio of a stock is more than 1, then it is considered as overvalued."]
+        
+        },
+        {"tag":"revenue growth/loss rate",
+         "patterns":["what is revenue growth/loss rate","explain revenue growth/loss rate","tell me about revenue growth/loss rate","what's revenue growth/loss rate","can i know about revenue growth/loss rate"],
+         "responses":["Predicting future revenue growth helps in investment strategies. If there is a steady Revenue Growth rate of a firm, it indicates a better chance of investing. If there is a steady Revenue Loss rate of a firm, it indicates a lower chance of investing. Revenue growth measures the increase in amount of sales during a certain period of time."]
+        
+        },
+        {"tag":"return on equity",
+         "patterns":["what is return on equity","explain return on equity","tell me about return on equity","what's return on equity","can i know about return on equity"],
+         "responses":["Return on Equity is the percent of Net Income divided by Shareholder Equity. A high equity percent is a good sign the company is profitable and not in tons of debt. Return on Equity is the percent of Net Income divided by Shareholder Equity. This is a Key indicator that a company knows how to accurately reinvest their earnings."]
+             
+        },
+        {"tag":"profit margin",
+         "patterns":["what is profit margin","explain profit margin","tell me about profit margin","what's profit margin","can i know about profit margin"],
+         "responses":["Profit Margin is the percentage of profit a business makes on a sale. It helps effectively in understanding growth and development of any businesses. When there's a high Profit Margin, the Earnings per share tends to increase which in future. This helps investors to choose high Profit Margin firms. This is an effective indicator for Portfolio Optimization."]
+        
+        },
+        {"tag":"earnings announcement",
+         "patterns":["what is earnings announcement","explain earnings announcement","tell me about earnings announcement","what's earnings announcement","can i know about earnings announcement"],
+         "responses":["Earnings Announcement is the public announcement of a company's earnings in a specific time period, quarterly or yearly. This shows how a company is performing. By analysing different parameters investors can analyse how the company may perform in the future. A good performance results in increase in stock price rather than a poor performing company."]
+        
+        },
+        {"tag":"earnings surprise",
+         "patterns":["what is earnings surprise","explain earnings surprise","tell me about earnings surprise","what's earnings surprise","can i know about earnings surprise"],
+         "responses":["Earnings surprise occurs when a company's Earnings Announcement is quite opposite from the view of technical analysts or investors. This can be of a positive surprise or a negative surprise. A positive surprise may increase the stock price to a higher value. A negative surprise may rapidly reduce the stock price after the announcement. To deal with this companies are using Earnings Preannouncement strategies. This include details like Profit Margin, Sales and Revenue and some others in which the company has higher confidence."]
+        
+        },
+        {"tag":"institutional holdings",
+         "patterns":["what is institutional holdings","explain institutional holdings","tell me about institutional holdings","what's institutional holdings","can i know about institutional holdings"],
+         "responses":["Institutional Holdings are the amount of stocks of a company owned by an Institution. Insurance Companies and others who own a large amount of stocks in a company. Some institutional holdings have significant investment in Growth stocks, to gain higher returns. Some institutional holdings have significant investment in Value stocks, to reduce the risk. These influence the market volatility by highly affecting the stock value. "]
+        
+        },
+        {"tag":"exchange",
+         "patterns":["what is exchange","explain exchange","tell me about exchange","what's exchange","can i know about exchange"],
+         "responses":["Exchange is a virtual market or a physical location where sellers and buyers trade existing securities. They are hold by any institute or government where shares, stocks, futures, indexes, bonds, options, commodities and others are traded. The total amount traded or exchanged in a day by two parties  is referred to Volume. There shouldn't be high latency while displaying the prices, which may lead to adverse effects."]
+        
+        },
+        {"tag":"index",
+         "patterns":["what is index","explain index","tell me about index","what's index","can i know about index"],
+         "responses":["Index is a measure of changes in security markets over certain period of time. It is used to track the performance of group of assets. It represents a group of stocks in a country or a geographic region. Eg: S&P500, DJI30, FTSE100. When the stock index is increasing it represents the overall performance of financial markets and country economy. Index trading has a ability to trade at any time zone, since many countries have stock indexes. More useful in long term trading."]
+        
+        },
+        {"tag":"derivative contracts",
+         "patterns":["what is derivative contracts","explain derivative contracts","tell me about derivative contracts","what's derivative contracts","can i know about derivative contracts"],
+         "responses":[" Derivative: a contract whose value is based on an underlying financial asset, index, or security on which two or more parties agreed. Commonly used derivatives include forward contracts, futures contracts, swaps, options, and warrants. Derivatives can be used to either mitigate risk (hedging) or assume risk with the expectation of commensurate reward (speculation)."]
+        
+        },
+        {"tag":"net unrealized appreciation ",
+         "patterns":["what is net unrealized appreciation","explain net unrealized appreciation","tell me about net unrealized appreciation","what's net unrealized appreciation","can i know about net unrealized appreciation"],
+         "responses":["Unrealized appreciation is the difference between the current market value and original cost of employer stock shares. While ordinary income tax must be paid immediately on the cost of the employer stock shares, a more favorable capital gains tax can be paid on the NUA of employer stock upon distribution (after qualifications are met)."]
+        
+        },
+        {"tag":"deferred tax item",
+         "patterns":["what is deferred tax item","explain deferred tax item","tell me about deferred tax item","what's deferred tax item","can i know about deferred tax item"],
+         "responses":["A deferred tax is a balance sheet item resulting from the advanced payment/ overpayment of taxes. May arise when there is a difference in tax/ accounting rules or a carryover of tax losses"]
+        
+        },
+        {"tag":"federal funds rate",
+         "patterns":["what is federal funds rate","explain federal funds rate","tell me about federal funds rate","what's federal funds rate","can i know about federal funds rate"],
+         "responses":["Federal funds rate: the interest rate that banks charge other banks for lending excess cash to them overnight from their reserve balances. Legally, banks must maintain a reserve equal to a specific percentage of their deposits in a Federal Reserve bank account. The Federal Open Market Committee (FOMC) sets federal funds rate eight times a year, based on salient economic conditions, and can impact the stock market."]
+        
+        },
+        {"tag":"modern portfolio theory ",
+         "patterns":["what is modern portfolio theory","explain modern portfolio theory","tell me about modern portfolio theory","what's modern portfolio theory","can i know about modern portfolio theory"],
+         "responses":["MPT: Modern portfolio theory is a theory on how risk-averse investors can construct efficient portfolios to maximize expected return for a given market risk level or to minimize risk for a given expected return. MPT uses the mean variance of investment returns and assumes symmetrical risk whereas the post-modern portfolio theory (PMPT) uses the downside risk of returns and assumes asymmetrical risk."]
+        
+        },
+        {"tag":"bond rating",
+         "patterns":["what is bond rating","explain bond rating","tell me about bond rating","what's bond rating","can i know about bond rating"],
+         "responses":["A bond rating: a letter-based credit scoring system to determine the quality and creditworthiness of a bond. Investment grade bonds are assigned 'AAA' to 'BBB-' ratings from Standard & Poor's and 'Aaa' to 'Baa3' ratings from Moody's. Junk bonds have lower ratings. The lower a bond's rating, the higher its interest rate will be (all else equal)."]
+        
+        },
+        {"tag":"treasury bonds",
+         "patterns":["what is treasury bonds","explain treasury bonds","tell me about treasury bonds","what's treasury bonds","can i know about treasury bonds"],
+         "responses":["Treasury bonds are one of four essentially risk-free government-issued securities (along with Treasury bills, Treasury notes, and Treasury Inflation-Protected Securities (TIPS)). T-bonds: fixed-rate U.S. government debt securities issued by the federal government that have maturities between 10 and 30 years. T-bonds pay semiannual interest payments until maturity, at which point the face value of the bond is paid to the owner."]
+        
+        },
+        {
+            "tag":"treasury bill",
+            "patterns":["what is treasury bill","explain treasury bill","tell me about treasury bill","what's treasury bill","can i know about treasury bill"],
+            "responses":["T-Bill: a short-term debt obligation backed by the U.S. Treasury Department with a maturity of one year or less. The longer the maturity, the higher the interest rate that the T-Bill will pay to the investor."]
+        
+        },
+        {
+            "tag":"capital market line",
+            "patterns":["what is capital market line","explain capital market line","tell me about capital market line","what's capital market line","can i know about capital market line"],
+            "responses":["The CML represents portfolios that maximize the return for a certain level of risk. The intercept point of CML and efficient frontier represents the most efficient portfolio."]
+        
+        },
+        {
+            "tag":"municipal bond insurance",
+            "patterns":["what is municipal bond insurance","explain municipal bond insurance","tell me about municipal bond insurance","what's municipal bond insurance","can i know about municipal bond insurance"],
+            "responses":["Municipal bond insurance is a guarantee, from the issuer of the municipal bond (e.g. bank), that the principal and coupon on the bond will be paid at the appropriate times in the event of a default. Municipal bond insurance gives a higher credit rating to the bond."]
+        
+        },
+        {  "tag":"tax preferred dividends",
+            "patterns":["what is tax preferred dividends","explain tax preferred dividends","tell me about tax preferred dividends","what's tax preferred dividends","can i know about tax preferred dividends"],
+            "responses":["Most preferred stock dividends are treated as qualified dividends—taxed at 15%-20%, a lower rate than the marginal tax rate for ordinary income. Preferred stock often pays regular, higher dividends than common shares, making them more like debt than traditional equity. This income source is taxed as preferred dividends rather than interest (i.e. preferred dividends are taxed at the more favorable rate of long-term capital gains)."]
+        
+        },
+        {
+            "tag":"equity kicker",
+            "patterns":["what is equity kicker","explain equity kicker","tell me about equity kicker","what's equity kicker","can i know about equity kicker"],
+            "responses":["Kicker: an extra incentive encouraging investors to purchase a debt security (e.g. a bond or preferred share). An embedded option of a bond, for example, would be considered a kicker if the bondholder can use it to buy equity at the issuing firm at a discounted price. A bond with a kicker allows the investor to benefit from any equity ownership value increase."]
+        
+        },
+        {
+            "tag":"auction rate security",
+            "patterns":["what is auction rate security","explain auction rate security","tell me about auction rate security","what's auction rate security","can i know about auction rate security"],
+            "responses":["Auction rate security (ARS) refers to a variable-rate financial instrument or security that is sold through a Dutch auction. In a Dutch auction, investors bids for the number of shares they are willing to buy and the price they are willing to pay. An Auction rate security is often a preferred share of stock or a bond with a long-term maturity. The interest rate often resets every 7, 14, 28, or 35 days"]
+        
+        },
+        {   "tag":"collateralized loan obligation",
+            "patterns":["what is collateralized loan obligation","explain collateralized loan obligation","tell me about collateralized loan obligation","what's collateralized loan obligation","can i know about collateralized loan obligation"],
+            "responses":["A collateralized loan obligation (CLO) is a financial instrument or security funded by a pool of debt. Collateralized loan obligations are often funded by loans with low credit ratings. The investor receives scheduled debt payments from the underlying loans. Collateralized loan obligations are actively managed financial instruments. Collateralized loan obligations are often backed by high-grade collateral"]
+        
+        },
+        {
+           "tag":"zero coupon bond",
+           "patterns":["what is zero coupon bond","explain zero coupon bond","tell me about zero coupon bond","what's collateralized zero coupon bond","can i know about zero coupon bond"],
+           "responses":["A zero-coupon bond is a financial instrument or security that provides a specified lump sum at a specified future date. An issuer receives money at the point of investment and pays the investor a specified amount of money at the end of the contract. The investor is also known as the lender, and the issuer is also known as the borrower. A zero-coupon bond is paid off by a single large payment instead of installment"]
+        
+        },
+        {
+            "tag":"hedge fund",
+            "patterns":["what is hedge fund","explain hedge fund","tell me about hedge fund","what's hedge fund","can i know hedge fund"],
+            "responses":["A hedge fund seeks to deliver healthy returns regardless of the market volatility. Hedge funds are often limited to qualified investors (investors with a net worth of more than $1 million). A hedge fund is often a limited partnership that groups money from various investors to invest in high-risk securities. Hedge funds can specialize in one investment area (in stocks, bonds, real estate, etc)"]
+         
+        },
+        {
+            "tag":" opportunity cost",
+           "patterns":["what is opportunity cost","explain  opportunity cost","tell me about opportunity cost","what's  opportunity cost","can i know  opportunity cost"],
+            "responses":["Opportunity cost is the representation of potential benefit an investor misses out on when choosing one investment over another. When evaluating opportunity costs, the benefits and costs of each investment are compared to each other. Understanding opportunity costs allows investors to make better decisions and more profit"]
+        
+        },
+        {
+            "tag":"trade deficit ",
+            "patterns":["what is trade deficit ","explain  trade deficit ","tell me about trade deficit ","what's trade deficit ","can i know  trade deficit "],
+            "responses":["A trade deficit happens when a country imports more than it imports during a given period. A trade deficit is also known as a negative balance of trade. It can be a result of a country lack of ability to produce its own products. It happens when a country attracts more foreign investment. Trade deficit allows countries to produce less and still be able to consume more. A trade deficit can help countries that don't have efficient capacity to produce enough goods to still be able to provide such goods to its citizens. If a nation continues to run a trade deficit, foreign investors will continue to buy existing businesses, natural resources, and other assets. If this continues the country will end up being owned by foreign investors"]
+        
+        },
+        {
+            "tag":"loss reserve",
+            "patterns":["what is  loss reserve","explain loss reserve ","tell me about loss reserve ","what's loss reserve","can i know loss reserve"],
+            "responses":["A loss reserve is an estimate of an insurer liability arising from future insurance claims. An insurance company takes into account the following when underwriting a new policy:The amount of premium receivable from the policyholder and future claim amounts payable by the insurer. The company sets up a loss reserve fund to reduce the chances of going bankrupt. It is very important to estimate the correct loss reserve amount. Overestimating the loss reserve can result in a reduction in the company's profits. If an insurance company underestimates the loss reserve, this could result in a company going bankrupt"]
+        
+        },
+        {
+            "tag":"declining balance",
+            "patterns":["what is  declining balance","explain declining balance ","tell me about declining balance ","what's declining balance","can i know declining balance"],
+            "responses":["Declining Balance is an accelerated depreciation method which depreciates an asset at a constant depression rate/percentage. Depreciation expense decreases throughout an asset useful life. Double Declining Balance (DDB). The Double Declining Balance is an accelerated method which depreciates an asset value at twice the rate of the straight-line method. Units of Production. Depreciation expense is calculated based on estimated total units an asset is likely to produce over its useful life"]
+        
+        },
+        {   "tag":"depreciation",
+            "patterns":["what is  depreciation","explain depreciation ","tell me about depreciation ","what's depreciation","can i know depreciation"],
+            "responses":["Depreciation shows by how much an asset has lost its value. Depreciation allows a company to reduce an asset's value over some time. Assets can be expensive, so instead of recording the whole cost in one year, companies tend to spread out the cost by depreciating assets"]
+        
+        },
+        {    
+            "tag":"dividend 12 Month totals",
+            "patterns":["what is  dividend 12 Month totals","explain dividend 12 Month totals ","tell me about dividend 12 Month totals ","what's dividend 12 Month totals","can i know dividend 12 Month totals"],
+            "responses":["Refers to a stock / fund's total trailing 12-month dividend payments"]
+        },
+        {
+            "tag":"dividend dates",
+          "patterns":["what is  dividend dates","explain dividend dates","tell me about dates ","what's dividend dates","can i know dividend dates"],
+          "responses":["Ex-dividend Date: all shares bought and sold on this date no longer come attached with the right to be paid the most recently declared dividend →  investors must own a stock before the ex-dividend date in order to receive the incoming dividend. Record Date: the day when the company checks its records to identify shareholders of the company. An investor must be listed on that date to be eligible for a dividend payout. Payment / Pay date: the day when the dividend is paid to shareholders"]
+        
+        },
+        {
+            "tag":"recent rating changes ",
+            "patterns":["what is  recent rating changes","explain recent rating changes","tell me about recent rating changes ","what's recent rating changes","can i know recent rating changes"],    
+            "responses":["A change in the rating of a stock's performance by a Brokerage Firm due to recent market trends"]
+        
+        },
+        {
+            "tag":"first call consensus",
+            "patterns":["what is  first call consensus","explain first call consensus","tell me about first call consensus","what's first call consensus","can i know first call consensus"],      
+            "responses":["Thomson First Call compiles analyst reports and computes the average expectation for a company's quarterly per-share earnings. Investors then watch earnings reports to determine whether a company meets, beats or misses that average estimate. Instead of calling it a consensus, which implies that the analysts agreed on the number, First Call now describes the average of the analyst estimates as the 'mean'."]
+        
+        },
+        {   "tag":"street ratings",
+            "patterns":["what is  street ratings","explain street ratings","tell me about street ratings","what's street ratings","can i know street ratings"],        
+            "responses":["A fund rating by TheStreet.com, condensed from the available fund performance & risk data. A - Excellent (Buy). Excellent track record of maximizing performance while minimizing risk. Has made the most of the recent economic environment to maximize risk-adjusted returns compared with other funds. Most likely to deliver superior performance relative to risk in the future. B - Good (Buy). Good track record of balancing performance with risk. Achieved above-average returns given the level of risk in its underlying investments. A good investment in the recent past. C - Fair (Hold). About average track record in the trade-off between performance and risk. The higher returns from some funds were achieved with higher than average risk. No particular advantage to investing in. D - Weak (Sell). Underperformed the universe of other funds given the level of risk in its underlying investments, resulting in a weak risk-adjusted performance. Thus, its investment strategy and/or management has not been attuned to capitalize on the recent economic environment. A bad investment over the recent past. E - Very Weak (Sell). Significantly underperformed most other funds given the level of risk in its underlying investments, resulting in a very weak risk-adjusted performance. Thus, its investment strategy and/or management has done just the opposite of what was needed to maximize returns in the recent economic environment. A very bad investment in the recent past."]
+        
+        },
+        {
+            "tag":"cfra",
+            "patterns":["what is  cfra","explain cfra ","tell me about cfra ","what's cfra","can i know cfra"],
+            "responses":["Center for Financial Research and Analysis provides independent research and analytics to subscribers. Forensic accounting research, Fundamental research on companies and funds, Bespoke solutions. A proprietary qualitative equity research methodology by CFRA. Used to cover over 1,100 U.S. and over 450 non-U.S. stocks. Determined and assigned by equity analysts Grade Comparing to Benchmark (over 1 year). Stock Price Prediction. 1 - Star. Underperforms by wide margin. Falls on an absolute basis. 2 - Stars. Underperforms. Not expected to show a gain. 3 - Stars. Closely approximate. Rises on an absolute basis 4 Stars - Outperforms. Rises on an absolute basis. 5 Stars - Outperforms by wide margin.Rises on an absolute basis"]
+        
+        },
+        {   "tag":"research team company reports",
+            "patterns":["what is  research team company reports","explain research team company reports ","tell me about research team company reports","what's research team company reports","can i know research team company reports"],   
+            "responses":["Free reports offered by TD Ameritrade to its brokerage clients. Use algorithmic theory to consolidate expert recommendations from 5 highly valued 3rd party research providers into a single consolidated ranking"]
+        
+        },
+        {   "tag":"ford motor company",       
+            "patterns":["what is  ford ","explain ford ","tell me about ford ","what's ford ","can i know ford "],   
+            "responses":["An American multinational automaker that has its main headquarters in Dearborn, Michigan. Founded in 1903 by Henry Ford. 2nd largest U.S.-based automaker, 5th in the world. Designs, manufactures, markets, and services a range of Ford cars, trucks, sport utility vehicles, electrified vehicles worldwide. Introduced methods for large-scale manufacturing of cars and management of workforce using manufacturing sequences typified by moving assembly line. CEO: Jim Hackett"]
+            
+        },
+        {
+            "tag":"sec form adv",
+            "patterns":["what is  sec form adv ","explain sec form adv ","tell me about sec form adv ","what's sec form adv","can i know sec form adv "],   
+            "responses":["Investment advisers use this uniform form to register with both the SEC and state securities authorities. Part 1: information about the investment adviser's business, ownership, clients, employees, business practices, affiliations, and any disciplinary events of the adviser or its employees. Part 2: information about the types of advisory services offered, the adviser's fee schedule, disciplinary information, conflicts of interest, and the educational and business background of management and key advisory personnel of the adviser. Investment advisers are required to deliver annual updates of information on this form to their clients "]
+        
+        },
+        {
+            "tag":"securities industry essentials (sie) exam",
+            "patterns":["what is  securities industry essentials (sie) exam ","explain securities industry essentials (sie) exam ","tell me about securities industry essentials (sie) exam","what's securities industry essentials (sie) exam","can i know securities industry essentials (sie) exam "],   
+            "responses":["An introductory-level FINRA exam for prospective industry professionals, not essentially ones that are already working in brokerage companies. Assesses a candidate's basic knowledge of securities industry topics fundamental to working in the industry. An organization that is formed to regulate certain professions or industries. Usually non-governmental organizations, established to create rules to promote order among businesses and organizations. Helpful in an industry or profession where trust is low. Do not need a grant of authority from the government to enforce their regulations. Funded by the organizations that are under its wings. The Securities and Exchange Commission (SEC) is a SRO. "]
+        
+        },
+        {
+            "tag":"last in first out",
+            "patterns":["what is  last in first out ","explain last in first out ","tell me about last in first out","what's last in first out","can i know last in first out "],  
+            "responses":["An accounting method to calculate the value of inventory. The cost of the most recent products purchased / produced are the first to be expensed as Cost of Goods Sold (COGS). Lower cost of older products will be reported as inventory. Lowers net income but is tax advantageous when prices are rising. Two alternatives: FIFO (First-in-First-Out) & Average Cost Method (use weighted average of all units to calculate COGS). LIFO is used only in the US, under GAAP"]
+        
+        },
+        {   "tag":"mark to market",
+            "patterns":["what is mark to market ","explain mark to market ","tell me about mark to market","what's mark to market","can i know mark to market"],       
+            "responses":["Largely adopted in the 20th century. Included in Generally Accepted Accounting Principles (GAAP) in US in 1990. An accounting method that aims to provide a realistic estimate of a financial situation based on current market conditions. Record the value of an asset with respect to its current market price. In contrast, historical cost accounting is based on the past transactions, and thus is simpler and more stable, but does not reflect current market value"]
+        
+        },
+        {
+            "tag":"payment in kind",
+            "patterns":["what is payment in kind","explain payment in kind ","tell me about payment in kind","what's payment in kind","can i know payment in kind"],       
+            "responses":["The use of a good or service as payment instead of cash. Cash alternatives for work or services are also accepted. Internal Revenue Service: refers to PIK as bartering income; requires people who receive the income report it on their income tax returns. PIK Securities: pay a relatively high rate of interest but are risky. PIK Notes: issuer can delay making dividend payments in cash, and in return for the delay, the issuer typically agrees to offer a higher rate of return on the note"]
+        
+        },
+        {   "tag":"commodity",
+            "patterns":["what is commodity","explain commodity ","tell me about commodity","what's commodity","can i know commodity"],       
+            "responses":["Commodities are hard assets you can touch. Hard Commodities: natural resources that must be mined or extracted—such as gold, rubber, and oil. Soft Commodities: agricultural products or livestock—such as corn, wheat, coffee, sugar, soybeans, and pork. A physical or virtual marketplace for buying, selling, and trading raw or primary products. Investors trade commodities through Futures & Options contracts. Stocks in companies whose business relies on commodities prices , as well as funds that have a focus on these companies. Around 50 major commodity markets worldwide, around 100 primary commodities being traded. Major U.S. commodity exchanges: Chicago Board of Trade, Chicago Mercantile Exchange, New York Board of Trade, New York Mercantile Exchange."]
+        
+        },
+        {   "tag":"petrochina",
+            "patterns":["what is petrochina","explain petrochina","tell me about petrochina","what's petrochina","can i know petrochina"],       
+            "responses":["Chinese state-owned oil and gas company, currently Asia's largest oil and gas producer. Founded in 1999 in Beijing, China. Operates in: Exploration and Production; Refining and Chemicals; Marketing; Natural Gas and Pipeline. Listed on NYSE (PTR), Hong Kong Exchanges  (857) and Shanghai Stock Exchange (601857). Market Cap: $65.9"]
+        
+        },
+        {
+            "tag":"foreign exchange contract",
+            "patterns":["what is foreign exchange contract","explain foreign exchange contract","tell me about foreign exchange contract","what's foreign exchange contract","can i know foreign exchange contract"],       
+            "responses":["A foreign exchange contract is a legal arrangement in which the parties agree to transfer between them a certain amount of foreign exchange at a predetermined rate of exchange, and as of a predetermined date. These contracts are most used when an organization buys from a foreign supplier and wants to hedge against the risk of an unfavorable foreign exchange rate fluctuation before the payment is due. Foreign exchange is the swapping of one currency for another. A hedge is an action taken to offset the potential for an adverse price change in an asset"]
+        
+        },
+        {
+            "tag":"nafta or usmca",
+            "patterns":["what is nafta or usmca","explain nafta or usmca","tell me about nafta or usmca","what's nafta or usmca","can i know nafta or usmca"],       
+            "responses":["The North American Free Trade Agreement's purpose is to reduce trading costs, increase business investment, and help North America be more competitive in the global marketplace. NAFTA is the world's largest free trade agreement. It is so large that it took three Presidents to implement it. Created to help the United States, Mexico, and Canada compete with the European Union, it has tripled trade, but also been criticized for outsourcing American jobs. The North American Free Trade Agreement (NAFTA) entered into force on January 1, 1994. It has been replaced by the United States–Mexico–Canada Agreement (USMCA) on July 1, 2020."]
+        
+        },
+        {
+
+            "tag":"world trade organization",
+            "patterns":["what is world trade organization","explain world trade organization","tell me about world trade organization","what's world trade organization","can i know world trade organization"],       
+            "responses":["WTO is the only global international organization dealing with the rules of trade between nations. WTO was established by 124 governments through the Marrakesh Agreement in April 1994, also known as the 'Final Act Embodying the Results of the Uruguay Round of Multilateral Trade Negotiations.' The United States still believes the WTO has the potential to play an instrumental role in helping make markets more efficient, pursuing balanced trade among the world's economies, and creating greater wealth and prosperity for U.S."]
+        
+        },
+        {   "tag":"trade policy",
+            "patterns":["what is trade policy","explain trade policy","tell me about trade policy","what's trade policy","can i know trade policy"],      
+            "responses":["Trade policy refers to the regulations and agreements that control imports and exports to foreign countries."]
+        
+        },
+        {
+            "tag":"leveraged buyout ",
+            "patterns":["what is leveraged buyout ","explain leveraged buyout ","tell me about leveraged buyout ","what's leveraged buyout ","can i know leveraged buyout "],     
+            "responses":["LBO is the acquisition of another company using a significant amount of borrowed money to meet the cost of acquisition. The purpose of LBO is to allow companies to make large acquisitions without having to commit a lot of capital. In LBO, there is usually a ratio of 90% debt to 10% equity. Because of this high debt/equity ratio, the bonds issued in the buyout are usually are not investment grade and are referred to as junk bonds. The cost of acquisition is the total expense incurred by a business in acquiring a new client or purchasing an asset."]
+        
+        },
+        {
+            "tag":"deferred income tax",
+            "patterns":["what is deferred income tax ","explain deferred income tax","tell me about deferred income tax ","what's deferred income tax ","can i know deferred income tax "],    
+            "responses":["Deferred income tax is the difference between the income tax expense associated with the revenues and expenses reported on a corporation's income statements and the actual income tax appearing on the corporation's income tax returns. This difference occurs because the definition of income is not the same under GAAP (generally accepted accounting principles) and federal income tax regulations. Deferred tax liability is a tax that is assessed or is due for the current period but has not yet been paid. A deferred tax asset is an item on the balance sheet that results from overpayment or advance payment of taxes"]
+        
+        },
+        {
+            "tag":"convertible bonds",
+            "patterns":["what is convertible bonds","explain convertible bonds","tell me about convertible bonds","what's convertible bonds ","can i know convertible bonds "],    
+            "responses":["A convertible bond is a bond that can be converted into a predetermined amount of the company's equity shares or common stocks at certain times during its life, usually at the discretion of the bondholder. The conversion from the bond to stock happens at specific times during the bond's life and is usually at the discretion of the bondholder. Convertible bonds carry lower interest rates than non-convertible bonds due to the benefits gained when common share prices go up."]
+        
+        },
+        {
+            "tag":"financial quota share",
+            "patterns":["what is financial quota share","explain financial quota share","tell me about financial quota share","what's financial quota share ","can i know financial quota share"],    
+            "responses":["A financial quota share is a reinsurance treaty in which the ceding company is responsible for a portion of the loss associated with a claim. Financial quota shares do not require the ceding company to pay a deductible before coverage begins, as the company will always be responsible for a portion of the loss. Reinsurance occurs when multiple insurance companies share risk by purchasing insurance policies from other insurers to limit their own total loss in case of disaster. A ceding company is an insurance company that passes a portion or all of the risk associated with an insurance policy to another insurer."]
+        
+        },
+        {
+            "tag":"callable bond",
+            "patterns":["what is callable bond","explain callable bond","tell me about callable bond","what's callable bond","can i know callable bond"],    
+            "responses":["A bond is a fixed income that represents a loan made by an investor to a borrower. Bonds have maturity dates at which point the principal amount must be paid back in full or risk default. A callable bond is a bond that the issuer may redeem before it reaches the stated maturity date. A callable bond allows companies to pay off their debt early and benefit from favorable interest rate drops. Pay a higher interest rate than non-callable bond. Investors must replace called bonds with lower rate products. Helps companies raise capital. Investors cannot take advantage when market rates rise."]
+            
+        },
+        {
+            "tag":"consumer price index ",
+            "patterns":["what is consumer price index","explain consumer price index","tell me about consumer price index","what's consumer price index","can i know consumer price index"],    
+            "responses":["CPI is a measure that examines the weighted average of prices of a basket of consumer goods and services, such as transportation, food, and medical care. CPI is used to identify periods of inflation or deflation. CPI is based on the index average for the period from 1982 through 1984 (inclusive) which was set to 100. A CPI reading of 100 means that inflation is back to the level that it was in 1984. Readings of 150 indicates a rise in the inflation level of 150%."]
+        
+        },
+        {
+            "tag":"earning per share growth",
+            "patterns":["what is earning per share growth","explain earning per share growth","tell me about earning per share growth","what's earning per share growth","can i know earning per share growth"],    
+            "responses":["EPS growth shows the growth of earnings per share over time. EPS growth helps investors identify stocks that are increasing or decreasing in profitability. EPS Growth = (EPS this year) / (EPS last year) – 1"]
+        
+        },
+        {
+            "tag":"posco",
+            "patterns":["what is posco","explain posco","tell me about posco","what's posco","can i know posco"],   
+            "responses":["POSCO is a South Korean Steel making company headquartered in Pohang,South Korea. It 2010 it was world's largest steel manufacturing company by market value. It was launched on April 1,1968 with the mission for national industrializations. It has market cap of 14.64 Trillion. It 2012 it was named as 146th larger global corporation by Fortune global 500. POSCO operates a joint venture with US steels USS-POSCO in Pittsburg,California,USA. POSCO has more than 181 overseas company in more than 50 countries"]
+        
+        },
+        {
+            "tag":"tesco",
+            "patterns":["what is tesco","explain tesco","tell me about tesco","what's tesco","can i know tesco"],    
+            "responses":["Tesco was founded in 1919 by Jack Cohen. Tesco is one of the most recognizable British retail names -atleast when  it comes to grocery shopping. The headquarters is at Welwyn Garden city,England,UK. Its first acquisition occurred in 1957 when it bought 70 williamson's stores. It has acquired around 30 different companies expanding its reach along Europe and Asia, Tesco trades on London Stock Exchange and  a part of FTSE 100 index. It has a market capitalization around $28.4 billion. Some of Tesco's acquisition seemed logical at the time they were made but resulted in losses."]
+        
+        },
+        {
+            "tag":"reit",
+            "patterns":["what is reit","explain reit","tell me about reit","what's reit","can i know reit"],    
+            "responses":["REIT stands for Real Estate Investment Trust. It is a company that owns,operates or finances income-producing properties. It generate a steady income for investors but offer little in way of capital appreciation. Most REITs are publicly  traded which makes them highly liquid. The stockholder of REIT can earn a share of income  produced through real estate investment without actually having to go out and buy ,manage or finance properties. REIT have comparatively low correlation with assets makes them portfolio diversifier which reduces overall portfolio risk and increases returns. Opting for the company that have been in the field for several years and have experienced core team would be more beneficial."]
+        
+        },
+        {
+            "tag":"mar ratio",
+            "patterns":["what is mar ratio","explain mar ratio","tell me about mar ratio","what's mar ratio","can i know mar ratio"],    
+            "responses":["It get its name from Managed Accounts Report newsletter a  financial publication publisher Leon Rose,who developed this metric. It is a measure of performance returns adjusted for risk. Performance of commodity trading investors ,trading strategies and hedge funds can all be compared by MAR ratio. Since it only looks at performance ,the major drawback is it does not take into considerations of different time frame funds and strategies. MAR ratio should be at least  0.5 and above 1 is impressive. The Compound Annual rate of Return is rate of an investment from start to finish with annual returns that are reinvested. A drawdown  in fund or strategy is its worst performance during specified time period."]
+        
+        },
+        {
+            "tag":"treynor ratio",
+            "patterns":["what is treynor ratio","explain treynor ratio","tell me about treynor ratio","what's treynor ratio","can i know treynor ratio"],    
+            "responses":["It is named after Jack Treynor. It is also known as reward to volatility ratio. It is a performance measure of how much excess return was generated for each unit of risk generated by portfolio. Excess return refer to the return earned above the return that could be earned in risk-free investment. Risk here refers to systematic risk as measured to portfolio's beta. Beta measures the tendency of change in portfolio return in response to changes in return of overall market. Higher the ratio,the portfolio is more suitable to investment. When comparing two portfolio the ratio does not indicate the significance of difference between  the two as they are ordinal."]
+        
+        },
+        {
+            "tag":"sortino ratio",
+            "patterns":["what is sortino ratio","explain sortino ratio","tell me about sortino ratio","what's sortino ratio","can i know sortino ratio"],    
+            "responses":["It  was named after Frank A.Sortino. It is also used to measure risk-adjusted return of investment,portfolio or strategy . It differs from the sharpe ratio as it only considers standard deviation of downward risk rather that of total (upward and downward)risk. Downward risks are the returns that fall below minimally acceptable return targets. Many investors argue that sortino ratio is a better measure of risk. Similar to sharpe ratio, higher the ratio, the better. A sortino ratio greater than 2 is considered to be good."]
+        
+        },
+        {
+            "tag":"sharpe ratio",
+            "patterns":["what is sharpe ratio","explain sharpe ratio","tell me about sharpe ratio","what's sharpe ratio","can i know sharpe ratio"],    
+            "responses":["It is developed by William F.Sharpe. It helps the investors to understand the return of investments compared to its risk. The ratio is average return earned in excess of risk free rate per  unit of  volatility or total risk. Generally,greater the value of sharpe ratio , the more attractive the risk adjusted returns. The sharpe ratio can be used to evaluate  portfolio's past performance as actual returns are used in calculating sharpe ratio. However it assumes the returns are normally distributed but in real returns are skewed away from the average. Usually sharpe values greater than 1 are taken to be considerably good by investors. A ratio higher than 2 is very good and 3 is excellent while ratio below 1 is considered as sub-optimal."]
+        
+        },
+        {
+            "tag":"average directional index",
+            "patterns":["what is average directional index","explain average directional index","tell me about average directional index","what's average directional index","can i know average directional index"],    
+            "responses":["It is also referred as ADX. It is a line which is a component  in DMI. While +DMI and -DMI determines the direction of price movement ,ADX focuses on  strength  of the uptrend and downtrend. The crossover between +DI and -DI produces trade signals. If +DMI is above -DMI and ADX is above 20,or ideally 25 ,it is a potential buy signali.e)long trade. If -DMI is above +DMI and ADX is above 20 or 25,it is an ideal  to enter  potential short trade. When ADX is below 20 ,the price is trendless and it is not ideal time to enter into trade."]
+        
+        },
+        {
+            "tag":"directional movement indicator",
+            "patterns":["what is directional movement indicator","explain  directional movement indicator","tell me about directional movement indicator","what's directional movement indicator","can i know directional movement indicator"],    
+            "responses":["Directional Movement indicator also referred as DMI. It was developed by J.Welles. It is normally shown above or below the price charts. It is calculated by comparing current price with previous price range. DMI displays results as Upward Directional Index (+DMI)and Downward directional trend (-DMI)."]
+        
+        },
+        {
+            "tag":"defensive stock",
+            "patterns":["what is defensive stock","explain  defensive stock","tell me about defensive stock","what's defensive stock","can i know defensive stock"],         
+            "responses":["The Stocks are considered Recession Proof and storage of wealth. These are stocks that will forever be commoditized!"]
+        
+        },
+        {
+            "tag":"par value",
+            "patterns":["what is par value","explain  par value","tell me about par value","what's par value","can i know par value"],            
+            "responses":["Par Value is another word for face value. The par value of a stock can be determined by dividing the total number of common / preferred stock at par value by the remaining number of outstanding shares."]
+        
+        },
+        {
+            "tag":"high yield bond",
+            "patterns":["what is high yield bond","explain  high yield bond","tell me about high yield bond","what's high yield bond","can i know high yield bond"],               
+            "responses":["A Bond is basically a debt (between the investor and the government or company). High Yield Bond is a bond that pays a high yield "]
+        
+        },
+        {
+           "tag":"unrealized gains",
+            "patterns":["what is unrealized gains","explain unrealized gains","tell me about unrealized gains","what's unrealized gains","can i know unrealized gains"],                    
+            "responses":["Profit that has not been cashed in (theoretical profit)"]
+        
+        },
+        {
+            "tag":"series 65",
+             "patterns":["what is series 65","explain series 65","tell me about series 65","what's series 65","can i know series 65"],                       
+            "responses":["The Series 65 Exam is The Uniform Investment Adviser Law Examination. The Exam fee is $175. A passed Series 65 Exam gives a company or individual a license to become an Investment Advisor. This gives the legal right to give Financial Advice for a Fee!. Do not need a FINRA or SRO sponsor to take this exam."]
+        
+        },
+        {
+            "tag":"series 7",
+           "patterns":["what is series 7","explain series 7","tell me about series 7","what's series 7","can i know series 7"],                           
+          "responses":["The Series 7 is considered the General Securities Representative Qualification Examination (GS). This certification gives the legal ability to be a general securities representative aka StockBroker. To be eligible to take the exam a candidates must be associated and/or sponsored by a FINRA member firm or other credible self-regulatory organization (SRO) member firm. A passed Series 7 Exam gives a company of individual the right to purchase and sell:for example -- Common and Preferred Stocks"]
+        
+        },
+        {
+            "tag":"series 63",
+             "patterns":["what is series 63","explain series 63","tell me about series 63","what's series 63","can i know series 63"],                                   
+            "responses":["Series 63 Exam is considered the the Uniform Securities State Law Examination. Passing the Exam allows a person or company to function as a Broker-Dealer representative also known as a Securities Agent. This exam is $135. A Broker-Dealer trades on behalf of clients or owns a Full-Service Brokerage Firm. Passing the Series 63 and 6 or 7 gives legal right to sell any type of security in a specific state. Do not need a FINRA or SRO sponsor to take this exam. Series 63 is not required in Colorado, District of Columbia, Florida, Louisiana, Maryland, New Jersey, Ohio, and Puerto Rico. "]
+        
+        },
+        {
+            "tag":"series 6",
+            "patterns":["what is series 6","explain series 6","tell me about series 6","what's series 6","can i know series 6"],                                      
+            "responses":["Companies or Individuals must pass the SIE Exam and the Series 6 Exam to have the right to purchase and sell specific financial products on behalf of someone one. To be eligible to take the exam a candidates must be associated and/or sponsored by a FINRA member firm or other credible self-regulatory organization (SRO) member firm. A $40 Exam created by FINRA (Financial Industry Regulatory Authority). A passed Series 6 Exam gives a company of individual the right to purchase and sell: Mutual funds (closed-end funds on the initial offering only), Variable annuities, Variable life insurance, Unit investment trusts (UITs), Municipal fund securities"]
+        },
+        {
+            "tag":"sie exam",
+            "patterns":["what is sie exam","explain sie exam","tell me about sie exam","what's sie exam","can i know sie exam"],                                      
+            "responses":["The SIE Exam = Securities Industry Essentials Exam. A $60 Exam created by FINRA (Financial Industry Regulatory Authority). The SIE is open and available to take without Sponsorship or Association to anyone aged 18 or older. The SIE Exam is a great certification to have under your belt to get a position within Financial Services industry."]
+        }
+        
+   ]
+}
